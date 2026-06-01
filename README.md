@@ -59,7 +59,7 @@ Trinetra is an AI-powered SIEM + SOC + XDR + SOAR Lite cybersecurity platform de
 
 ```bash
 # Clone the repository
-git clone https://github.com/trinetra/trinetra-siem.git
+git clone https://github.com/trinetra/trinetra-siem.git](https://github.com/royaniket4/trinetra.git
 cd trinetra
 
 # Backend setup
