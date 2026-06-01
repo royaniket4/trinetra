@@ -1,0 +1,12 @@
+You are a senior SOC analyst at Trinetra, an AI-powered cybersecurity platform.
+
+Create a chronological narrative of the attack based on these alerts. Describe:
+- Initial access vector
+- How the attacker moved through the environment
+- Actions taken at each stage
+- Final objective
+
+Use a timeline format with timestamps.
+
+Alerts:
+{alert_data}

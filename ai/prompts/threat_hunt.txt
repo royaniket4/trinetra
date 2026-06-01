@@ -1,0 +1,9 @@
+You are a senior SOC analyst at Trinetra, an AI-powered cybersecurity platform.
+
+Convert this natural language query into a structured database query and execute it. 
+
+First, translate the user's question into relevant search parameters (time range, filters, etc.). Then provide the query results in a readable format.
+
+User Query: {query}
+
+If the query requires searching logs, provide the query parameters. If it asks for summary statistics, provide those. Format results clearly.

@@ -1,0 +1,139 @@
+{
+  "description": "MITRE ATT&CK mapping for all 12 detection rules",
+  "mappings": {
+    "brute_force": {
+      "rule_name": "Brute Force Detection",
+      "tactic": "TA0006",
+      "tactic_name": "Credential Access",
+      "technique": "T1110",
+      "technique_name": "Brute Force",
+      "description": "Adversaries may use brute force techniques to gain access to accounts when credentials are unknown or when password hashes are obtained. This technique may also be used to gain access to password reset links or API keys that provide access to a system.",
+      "severity": 4,
+      "confidence": 0.85
+    },
+    "successful_login_after_bruteforce": {
+      "rule_name": "Successful Login After Brute Force",
+      "tactic": "TA0001",
+      "tactic_name": "Initial Access",
+      "technique": "T1078",
+      "technique_name": "Valid Accounts",
+      "description": "Adversaries may obtain and abuse credentials of existing accounts as a means of gaining initial access, persistence, privilege escalation, or evading detection. This includes local accounts and cloud accounts.",
+      "severity": 5,
+      "confidence": 0.90
+    },
+    "powershell_encoded": {
+      "rule_name": "PowerShell Encoded Command",
+      "tactic": "TA0002",
+      "tactic_name": "Execution",
+      "technique": "T1059.001",
+      "technique_name": "PowerShell",
+      "description": "Adversaries may abuse PowerShell commands and scripts for execution. PowerShell is a powerful interactive command-line interface and scripting environment included in the Windows OS. Adversaries can use PowerShell to perform a number of actions, including downloading payloads and evading defenses.",
+      "severity": 4,
+      "confidence": 0.80
+    },
+    "suspicious_download": {
+      "rule_name": "Suspicious File Download",
+      "tactic": "TA0001",
+      "tactic_name": "Initial Access",
+      "technique": "T1204",
+      "technique_name": "Malicious File",
+      "description": "An adversary may rely upon a user executing a malicious file to gain execution. This includes applications from email, documents, web downloads, or other file-based delivery mechanisms.",
+      "severity": 3,
+      "confidence": 0.75
+    },
+    "privilege_escalation": {
+      "rule_name": "Privilege Escalation Attempt",
+      "tactic": "TA0004",
+      "tactic_name": "Privilege Escalation",
+      "technique": "T1068",
+      "technique_name": "Exploitation for Privilege Escalation",
+      "description": "Adversaries may exploit software vulnerabilities in an attempt to elevate privileges. Exploitation of a software vulnerability occurs when an adversary takes advantage of a programming error or security flaw in the operating system or software to elevate their privilege level.",
+      "severity": 4,
+      "confidence": 0.80
+    },
+    "credential_dumping": {
+      "rule_name": "Credential Dumping Indicators",
+      "tactic": "TA0006",
+      "tactic_name": "Credential Access",
+      "technique": "T1003",
+      "technique_name": "OS Credential Dumping",
+      "description": "Adversaries may attempt to dump credentials to obtain account login and credential material, which may be in the form of clear text passwords, hashes, or tickets from the OS or software. Credential dumping may also involve retrieving password hashes from the SAM database in Windows.",
+      "severity": 5,
+      "confidence": 0.90
+    },
+    "lateral_movement": {
+      "rule_name": "Lateral Movement Detected",
+      "tactic": "TA0008",
+      "tactic_name": "Lateral Movement",
+      "technique": "T1021",
+      "technique_name": "Remote Services",
+      "description": "Adversaries may use valid external services as a means for relaying commands or establishing persistence. Services such as SSH, VNC, RDP, and WinRM can be used to remotely access systems or move laterally within an environment.",
+      "severity": 3,
+      "confidence": 0.70
+    },
+    "data_exfiltration": {
+      "rule_name": "Potential Data Exfiltration",
+      "tactic": "TA0010",
+      "tactic_name": "Exfiltration",
+      "technique": "T1041",
+      "technique_name": "Exfiltration Over C2 Channel",
+      "description": "Adversaries may steal data by exfiltrating it over an existing command and control channel. The stolen data may include sensitive documents, credentials, or other valuable information.",
+      "severity": 4,
+      "confidence": 0.85
+    },
+    "port_scan": {
+      "rule_name": "Port Scan Detected",
+      "tactic": "TA0007",
+      "tactic_name": "Discovery",
+      "technique": "T1046",
+      "technique_name": "Network Service Discovery",
+      "description": "Adversaries may use port scanning as a means of discovering available services to determine how to further their operation within the target network.",
+      "severity": 3,
+      "confidence": 0.65
+    },
+    "sql_injection": {
+      "rule_name": "SQL Injection Attempt",
+      "tactic": "TA0001",
+      "tactic_name": "Initial Access",
+      "technique": "T1190",
+      "technique_name": "Exploit Public-Facing Application",
+      "description": "Adversaries may attempt to exploit web-based vulnerabilities in public-facing applications to gain access to internal systems or steal data.",
+      "severity": 4,
+      "confidence": 0.75
+    },
+    "reverse_shell": {
+      "rule_name": "Reverse Shell Signature",
+      "tactic": "TA0002",
+      "tactic_name": "Execution",
+      "technique": "T1059",
+      "technique_name": "Command and Scripting Interpreter",
+      "description": "Adversaries may abuse command and script interpreters to execute commands or payloads. This includes Unix shells, PowerShell, and VBScript.",
+      "severity": 5,
+      "confidence": 0.90
+    },
+    "ransomware": {
+      "rule_name": "Ransomware Activity",
+      "tactic": "TA0040",
+      "tactic_name": "Impact",
+      "technique": "T1486",
+      "technique_name": "Data Encrypted for Impact",
+      "description": "Adversaries may encrypt data on target systems to interrupt availability of system and user data. This may be done to extract monetary compensation or as a tactical aim to render data unavailable.",
+      "severity": 5,
+      "confidence": 0.95
+    }
+  },
+  "all_tactics": [
+    {"id": "TA0001", "name": "Initial Access"},
+    {"id": "TA0002", "name": "Execution"},
+    {"id": "TA0003", "name": "Persistence"},
+    {"id": "TA0004", "name": "Privilege Escalation"},
+    {"id": "TA0005", "name": "Defense Evasion"},
+    {"id": "TA0006", "name": "Credential Access"},
+    {"id": "TA0007", "name": "Discovery"},
+    {"id": "TA0008", "name": "Lateral Movement"},
+    {"id": "TA0009", "name": "Collection"},
+    {"id": "TA0010", "name": "Exfiltration"},
+    {"id": "TA0011", "name": "Command and Control"},
+    {"id": "TA0040", "name": "Impact"}
+  ]
+}

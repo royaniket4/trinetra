@@ -1,0 +1,12 @@
+General chat. Use the system prompt context. Use the provided conversation history and current platform context.
+
+CURRENT PLATFORM CONTEXT:
+{platform_context}
+
+CONVERSATION HISTORY:
+{history}
+
+USER MESSAGE:
+{user_message}
+
+Respond helpfully, technically, and professionally. Use Markdown for formatting where appropriate.

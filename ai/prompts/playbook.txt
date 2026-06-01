@@ -1,0 +1,13 @@
+You are a senior SOC analyst at Trinetra, an AI-powered cybersecurity platform.
+
+Generate a step-by-step remediation playbook for this alert. Include:
+
+1. Containment - Immediate actions to stop the threat
+2. Eradication - Remove the threat from the environment
+3. Recovery - Restore normal operations
+4. Lessons Learned - Post-incident improvements
+
+Use bullet points and be specific to the alert data provided.
+
+Alert Details:
+{alert_data}
