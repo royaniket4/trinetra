@@ -1,7 +1,7 @@
 # Trinetra - AI-Powered Cyber Defense Command Center
 
 <p align="center">
-  <img src="docs/banner.png" alt="Trinetra" width="400">
+  <img src="backend/trinetra-banner.png" alt="Trinetra" width="400">
 </p>
 
 <p align="center">
