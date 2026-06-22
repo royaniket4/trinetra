@@ -166,4 +166,4 @@ MIT License - See LICENSE for details.
 
 ---
 
-Built with ❤️ for cybersecurity portfolio projects
+Built with ❤️ for cybersecurity  projects
